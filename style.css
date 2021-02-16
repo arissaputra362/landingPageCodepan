@@ -1,0 +1,274 @@
+/* --  Global CSS -- */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+
+/* --  Header Costum CSS -- */
+header{
+    background-color: #2926A9;
+    color: #fff;
+    padding: 15px 0px;
+}
+
+header .contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+header .telepon, header .email{
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+}
+
+header .telepon{
+    margin-right: 15px;;
+}
+
+header img{
+    float: left;
+    width: 35px;
+}
+
+header .contact img{
+    margin-right: 10px;
+}
+
+header .contact .text{
+    float: left;
+}
+
+header .contact .text .judul{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+header .contact .text .isi{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header li{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header ul li img{
+    color: #fff;
+    align-self: center;
+}
+
+header li p{
+    margin-top: 3px;
+    text-align: center;
+    font-size: .6rem;
+    font-weight: 600;
+}
+
+/* --  Navigation Bar Costum CSS -- */
+
+nav {
+    background-color: #fff;
+    font-weight: 600; 
+}
+
+.navbar{
+    padding: 15px 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #101010;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #2926A9;
+}
+
+nav ul{
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav img{
+    width: 30px;
+}
+
+/* --  Jumbotron Costum CSS -- */
+.jumbotron{
+    background: url("img/background/JumboboxPIC.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.jumbotron .content{
+    text-align: right;
+    margin-right: 0;
+}
+
+.jumbotron .content h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.jumbotron .content h1{
+    font-weight: 800;
+}
+
+.jumbotron hr{
+    border: 2px solid #fff;
+    width: 10%;
+    margin-right: 0;
+}
+
+.jumbotron p{
+    font-size: 1.03rem;
+    text-align: right;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.jumbotron a{
+    font-size: 1.03rem;
+    text-decoration: underline;
+    color: #7F7F7F;
+    font-weight: 600;
+}
+
+/* Masalah dan kinerja */
+.page-masalah h1, .page-masalah h2, .page-masalah h3{
+    color: #2926A9;
+}
+
+.page-masalah{
+    background: #E9E9FF;
+    padding: 4rem 0;
+    padding-bottom: 200px;
+}
+
+.page-masalah h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.page-masalah p{
+    font-weight: 500;
+}
+
+.page-masalah .caption{
+    margin-bottom: 25px;
+}
+
+.page-masalah .btn-primary{
+    border-radius: 50px;
+    padding:15px 40px;
+    font-weight: 500;
+    background: #2926A9;
+    border: none;
+}
+
+.page-masalah ul{
+    padding: 0;
+}
+
+.page-masalah ul li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.page-masalah ul li .number{
+    margin-right:13px;
+}
+
+.page-masalah ul li h1{
+    width: 30px;
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.page-masalah ul li h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+    letter-spacing: -2;
+}
+
+.page-masalah ul li p{
+    line-height: 1;
+    font-size: 0.83rem;
+    font-weight: 500;
+}
+
+/*--- Layanan ---*/
+.jenis-layanan{
+    margin: -150px;
+}
+
+.jenis-layanan h3{
+    color: #2926A9;
+}
+
+.jenis-layanan .container .judul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.jenis-layanan .container .judul h3{
+    font-size: 1.3rem;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.jenis-layanan .container .judul hr{
+    border: 1px solid #2926A9;
+    width: 39%;
+}
+
+.jenis-layanan .card{
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #2926A9;
+}
+
+.jenis-layanan .card .card-title, .jenis-layanan .card .card-text{
+    color: #fff;
+}
+
+.jenis-layanan .card .card-title{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.jenis-layanan .card .card-text{
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}

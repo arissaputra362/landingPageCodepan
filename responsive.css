@@ -1,0 +1,81 @@
+@media only screen and (max-width: 600px) {
+    /* --- Header --- */
+    header .email{
+        margin-top: 10px;
+    }
+
+    header ul li{
+        margin: 0;
+    }
+
+    header ul li img{
+        margin-top: 25px;
+        width: 40px;
+    }
+
+    header ul li p{
+        font-size: 13px;
+    }
+
+    /*--- Navbar ---*/
+    nav ul{
+        margin: 15px;
+        padding: 0;
+    }
+
+    nav img{
+        width: 35px;
+    }
+    
+    /*--- Jumbotron ---*/
+    .jumbotron{
+        padding: 30px 20px;
+    }
+
+    .jumbotron .content{
+        text-align: center;
+    }
+
+    .jumbotron hr{
+        width: 20%;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .jumbotron p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    /*--- Header ---*/
+    header{
+        padding: 15px;
+    }
+
+    header .contact .text .judul{
+        font-size: 11px;
+    }
+
+    header .contact .text .isi{
+        font-size: 14px;
+    }
+
+    header ul li img{
+        margin-top: 15px;
+    }
+
+    /*--- Jumbotron ---*/
+    .jumbotron .content h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }   
+
+    .jumbotron .content h1{
+        font-size: 38px;
+    }
+
+    .jumbotron p, .jumbotron a{
+        font-size: 15px;
+    }
+}
