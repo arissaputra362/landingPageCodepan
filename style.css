@@ -1,10 +1,18 @@
 /* --  Global CSS -- */
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #F7F7FF;
 }
 
 p{
     margin: 0;
+}
+
+.page-masalah p,
+.jenis-layanan p,
+.portofolio p,
+.alasan-bermitra p{
+    color: #7F7F7F;
 }
 
 
@@ -185,11 +193,36 @@ nav img{
 }
 
 .page-masalah .btn-primary{
+    display: inline-block;
     border-radius: 50px;
     padding:15px 40px;
     font-weight: 500;
-    background: #2926A9;
+    background: #189AB4;
     border: none;
+    transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.page-masalah .btn-primary:hover{
+    text-decoration: none;
+}
+
+.page-masalah .btn-primary::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #2926A9;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.page-masalah .btn-primary:hover::before{
+    height: 100%;
 }
 
 .page-masalah ul{
@@ -227,7 +260,8 @@ nav img{
 
 /*--- Layanan ---*/
 .jenis-layanan{
-    margin: -150px;
+    margin-top: -150px;
+    margin-bottom: 4rem;
 }
 
 .jenis-layanan h3{
@@ -238,6 +272,7 @@ nav img{
     display: flex;
     align-items: center;
     margin-bottom: 35px;
+    text-align: center;
 }
 
 .jenis-layanan .container .judul h3{
@@ -253,9 +288,56 @@ nav img{
 
 .jenis-layanan .card{
     border-radius: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     background: #2926A9;
+}
+
+.jenis-layanan .selengkapnya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jenis-layanan .selengkapnya a{
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 35px;
+    color: #33BEF0;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: -5;
+    text-decoration: none;
+    transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.jenis-layanan .selengkapnya a:hover{
+    color: #2926A9;
+}
+
+.jenis-layanan .selengkapnya a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.jenis-layanan .selengkapnya a:hover::before{
+    height: 100%;
+}
+
+.jenis-layanan .selengkapnya img{
+    width: 17px;
+    margin-left: 5px;
 }
 
 .jenis-layanan .card .card-title, .jenis-layanan .card .card-text{
@@ -263,12 +345,179 @@ nav img{
 }
 
 .jenis-layanan .card .card-title{
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     font-weight: 600;
 }
 
 .jenis-layanan .card .card-text{
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 0.9rem;
+}
+
+.jenis-layanan .card .img-area{
+    height: 110px;
+    padding: 2px;
+    margin-bottom: 30px;
+}
+
+.jenis-layanan .img-area img{
+    height: inherit;
+}
+
+.jenis-layanan .carousel{
+    position: relative;
+}
+
+.jenis-layanan ol.carousel-indicators{
+    position: absolute;
+    bottom: -60px;
+    width: auto;
+}
+
+.jenis-layanan .carousel-indicators li{
+    width: 80px;
+    margin: 0 10px;
+}
+
+.jenis-layanan .carousel .indicator{
+    background-color: #7F7F7F;
+    height: 8px;
+    border-radius: 12.5px;
+}
+
+.jenis-layanan .carousel .indicator-active {
+    background-color: #2926A9 !important;
+}
+
+/*--- Portofolio ---*/
+.portofolio{
+    margin-bottom: 6rem;
+}
+
+.portofolio .card{
+    padding: 35px 25px 20px 25px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 8px 0 rgba(100, 100, 100, 0.2), 0 10px 10px 0 rgba(100, 99, 99, 0.19);
+}
+
+.portofolio .card .card-body{
+    padding: 0;
+    position: relative;
+}
+
+.portofolio .container-judul{
+    padding: 0 8rem;
+    margin-bottom: 40px;
+}
+
+.portofolio .sub-judul,
+.alasan-bermitra .container .sub-judul
+{
+    font-size: .95rem;
+    font-weight: 800;
+    color: #38D9C9;
+}
+
+.portofolio .keterangan-judul,{
+    font-weight: 500;
+}
+
+.portofolio h2,
+.alasan-bermitra h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #2926A9;
+    letter-spacing: -1px;
+    line-height: 1.3;
+}
+
+.portofolio .card-body{
+    margin-top: 40px;
+}
+
+.portofolio .card-body .mini-judul{
+    font-size: .9rem;
+    font-weight: 700;
+    color: #33BEF0;
+    margin-bottom: 10px;
+}   
+
+.portofolio .card-body .card-title{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2926A9;
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+
+.portofolio .card-body .card-text{
+    font-size: .95rem;
+    font-weight: 500;
+    line-height: 1.3;
+    padding-right: 5px;
+    margin-bottom: 70px;
+    margin-right: 10px;
+}
+
+.portofolio .card .btn-primary{
+    border: none;
+    background-color: #2926A9;
+    width: 100%;
+    padding: 12px;
+}
+
+.portofolio .card a{
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+/*--- Alasan Bermitra ---*/
+.alasan-bermitra .container-judul{
+    margin-bottom: 50px;
+}
+
+.alasan-bermitra .container-judul .sub-judul{
+    font-weight: 600;
+}
+
+.alasan-bermitra .container-judul p{
+    font-weight: 500;
+    line-height: 1.25;
+    font-size: .97rem;
+}
+
+.alasan-bermitra ul{
+    padding: 0;
+}
+
+.alasan-bermitra .items .item{
+    display: flex;
+    margin-bottom: 45px;
+    padding: 0 12px;
+}
+
+.alasan-bermitra .items .text-img{
+    width: 55px;
+    margin-right: 20px;
+}
+
+.alasan-bermitra .items li img{
+    width: inherit;
+}
+
+.alasan-bermitra .items .text h3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2926A9;
+}
+
+.alasan-bermitra .items .text p{
+    font-size: .87rem;
+    font-weight: 500;
+    line-height: 1.3;
 }

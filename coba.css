@@ -1,0 +1,61 @@
+/* layout */
+body{  
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    letter-spacing:2px;
+    margin:0;
+    padding:0;
+  }
+  .container{
+    min-height:100vh;
+    margin:0 auto;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align:center;
+    padding:100px 10%;
+  }
+  h3{
+    display:block;
+    width:100%;
+    margin:10px 10px 20px;
+  }
+  h3.txt-white{
+    color:#fff;
+  }
+  .btn{
+    flex: 1 auto;
+    margin:5px;
+    padding:10px 25px;
+    text-align:center;
+    background: #2926A9;
+    transition: all 0.5s ease-out;
+    cursor:crosshair;
+  }
+  
+  /* ---- luxury btns ---- */
+  .luxury{ /* block background */
+    background-color:#aa6c6c;
+  }
+  .luxury .btn{ /* general */
+    background:#33BEF0;
+    background-position: 50% 1%;
+    background-size: 300% 300%;
+    color:#fff;
+  }
+  
+  .luxury .btn-1{ /* inspired by https://codepen.io/dbox/pen/bdzeEw */
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.3);
+    background-image: linear-gradient(270deg, rgba(255,255,255,.9), rgba(255,255,255,.9), rgba(255,255,255,0), rgba(255,255,255,0));
+  }
+  .luxury .btn-1:hover{
+    border-color:transparent;
+    color:#161616;
+    background-position: 99% 50%;
+  }
