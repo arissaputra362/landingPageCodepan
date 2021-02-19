@@ -12,3 +12,11 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " indicator-active";
   });
 }
+
+$(".scarousel").owlCarousel({
+  margin: 10,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true,
+});

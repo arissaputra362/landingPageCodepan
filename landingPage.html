@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
 
+    <!-- Font CSS From Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Boostrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <!-- Line Awesome CSS From https://icons8.com/line-awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Header Effect CSS -->
+    <link rel="stylesheet" href="/headerEffect/css/style.css">
+    <link rel="stylesheet" href="/headerEffect/css/reset.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    
+    <!-- Costum CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
@@ -24,7 +39,7 @@
               <img src="img/header/chat-icon.png" alt="">
               <div class="text">
                 <p class="judul">Hubungi Kami</p>
-                <p class="isi">081252200089</p>
+                <a href="tel:+6281252200089" class="isi">081252200089</a>
               </div>
             </div>
 
@@ -32,7 +47,7 @@
               <img src="img/header/email-icon.png" alt="">
               <div class="text">
                 <p class="judul">Email Kami</p>
-                <p class="isi">info@codepanstudio.com</p>
+                <a href="mailto:info@codepanstudio.com" target="_blank" class="isi">info@codepanstudio.com</a>
               </div>
             </div>
           </div>  
@@ -40,21 +55,28 @@
           <!-- Icon Karir, Blog, Kontak -->
           <ul class="d-flex justify-content-md-end justify-content-sm-start col-md-6 col-sm-12">
             <li>
-              <img src="img/header/karir-icon.png" alt="">
-              <p>Karir</p>
+              <a href="">
+                <img src="img/header/karir-icon.png" alt="">
+                <p>Karir</p>
+              </a>
             </li>
             <li>
-              <img src="img/header/blog-icon.png" alt="">
-              <p>Blog</p>
+              <a href="">
+                <img src="img/header/blog-icon.png" alt="">
+                <p>Blog</p>
+              </a>
             </li>
             <li>
-              <img src="img/header/contact-icon.png" alt="">
-              <p>Kontak</p>
+              <a href="">
+                <img src="img/header/contact-icon.png" alt="">
+                <p>Kontak</p>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </header>
+    <!-- End of Header -->
 
     <!--  Bar Navigasi -->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -64,7 +86,7 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-5">
             <li class="nav-item active">
               <a class="nav-link" href="#">BERANDA <span class="sr-only">(current)</span></a>
             </li>
@@ -87,22 +109,22 @@
             </li>
           </ul>
   
-          <img src="" alt="" class="d-flex justify-content-center">
+          <a href="#"><img class="logo mr-auto" src="img/navbar/logo-codepan.png" alt="" class=""></a>
   
-          <ul class="d-flex justify-content-md-end justify-content-sm-center">
+          <ul class="d-flex justify-content-md-end justify-content-sm-center ml-auto">
             <li>
               <a href="">
-                <img src="img/navbar/facebook.svg" alt="">
+                <img src="img/navbar/fb.png" alt="">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="img/navbar/instagram.svg" alt="">
+                <img src="img/navbar/ig.png" alt="">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="img/navbar/linkedin.svg" alt="">
+                <img src="img/navbar/linkind.png" alt="">
               </a>
             </li>
             
@@ -110,13 +132,22 @@
         </div>
       </div>
     </nav>
+    <!-- End of Bar Navigasi -->
 
     <!-- Jumbotron Heading -->
     <div class="jumbotron d-flex justify-content-end">
       <div class="container">
         <div class="content col-12">
           <h2>Codepan Studio Melayani</h2>
-          <h1 class="display-4">Sistem Informasi</h1>
+          <h1 class="display-4 cd-headline rotate-1">
+            <span class="cd-words-wrapper text-right">
+              <b class="is-visible">Sistem Informasi</b>
+              <b>Aplikasi Mobile</b>
+              <b>Aplikasi E-Gov</b>
+              <b>Integrasi Sistem</b>
+              <b>Pengadaan IT</b>
+            </span>
+          </h1>
           <hr class="mt-4">
           <p class="col-md-5 col-sm-12 p-0">Layanan jasa pembuatan software kami telah membantu banyak perusahaan untuk mempermudah dan meningkatkan kinerja IT mereka</p>
           <br>
@@ -124,6 +155,7 @@
         </div>
       </div>
     </div>
+    <!-- End of Jumbotron Heading -->
 
     <!-- Masalah dan kinerja -->
     <div class="page-masalah">
@@ -170,6 +202,7 @@
         </div>
       </div>
     </div>
+    <!-- End of Masalah dan kinerja -->
 
     <!-- Layanan -->
     <div class="jenis-layanan">
@@ -179,7 +212,19 @@
           <h3>Jenis Layanan Kami</h3>
           <hr>
         </div>
-
+        
+        <!-- <div class="card-container">
+          <div class="wrapper">
+            <div class="card-carousel owl-carousel">
+              <div class="card">A</div>
+              <div class="card">B</div>
+              <div class="card">C</div>
+              <div class="card">D</div>
+              <div class="card">E</div>
+              <div class="card">F</div>
+            </div>
+          </div>
+        </div> -->
         <div class="row">
           <div class="col-md-12 batas-card">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -293,6 +338,7 @@
         </div>
       </div>
     </div>
+    <!-- End of Layanan -->
 
     <!-- Portofolio -->
     <div class="portofolio">
@@ -333,6 +379,7 @@
         </div>
       </div>
     </div>
+    <!-- End of Portofolio -->
 
     <!-- Alasan Bermitra -->
     <div class="alasan-bermitra">
@@ -423,11 +470,378 @@
             </div>
           </li>
         </ul>
+
+        <div class="end-text">
+          <p>Sudah saatnya bisnis Anda terbang lebih tinggi. <a href="">Telusuri perusahaan kami.</a></p>
+        </div>
       </div>
     </div>
+    <!-- End of Alasan Bermitra -->
 
+    <!-- Form Solusi -->
+    <div class="solusi">
+      <div class="container">
+        <!-- Container Mitra -->
+        <div class="row container-mitra">
+          <div class="col-md-5 text-center keterangan">
+            <p class="sub-judul">SELANGKAH KAMI LEBIH DEKAT</p>
+            <h2>DAPATKAN SOLUSINYA SEKARANG</h2>
+            <p class="text-under-judul">Silakan hubungi kontak atau isi form yang telah tersedia.</p>
+            
+            <ul class="row items">
+              <li class="col-md-12 item">
+                <div class="text-img">
+                  <img src="img/solusi/we-chat.png" alt="">
+                </div> 
+                <div class="text text-left">
+                  <h3>Mari Berdiskusi</h3>
+                  <p>Kami akan menghubungi dan
+                    berdiskusi tentang bisnis Anda,
+                    bagaimana Anda menggunakan teknologi, dan apa saja yang Anda butuhkan.</p>
+                </div>
+              </li>
+              <li class="col-md-12 item">
+                <div class="text-img">
+                  <img src="img/solusi/service.png" alt="">
+                </div> 
+                <div class="text text-left">
+                  <h3>Pilih Layanan</h3>
+                  <p>Anda bisa pilih paket layanan IT yang sesuai dengan kebutuhan perusahaan Anda.</p>
+                </div>
+              </li>
+              <li class="col-md-12 item">
+                <div class="text-img">
+                  <img src="img/solusi/goal.png" alt="">
+                </div> 
+                <div class="text text-left">
+                  <h3>Mulai Pengerjaan</h3>
+                  <p>Tim ahli kami akan mulai pengerjaan sesuai target dan kesepakatan bersama. Hingga kemudian solusi jitu kami tersedia pada bisnis Anda.
+                    </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-7 form">
+            <!-- Container Form -->
+            <div class="container-form">
+              <form>
+                <div class="row">
+                  <!-- Input Nama -->
+                  <div class="col-md-6 margin-text">
+                    <input type="text" class="form-control" placeholder="Nama Anda*" required>
+                  </div>
+
+                  <!-- Input Email -->
+                  <div class="col-md-6 margin-text">
+                    <input type="email" class="form-control" placeholder="Email Anda*" required>
+                  </div>
+
+                  <!-- Input No. HP -->
+                  <div class="col-md-6 margin-text">
+                    <input type="tel" class="form-control" placeholder="No HP*" required>
+                  </div>
+
+                  <!-- Input Nama Perusahaan -->
+                  <div class="col-md-6 margin-text">
+                    <input type="text" class="form-control" placeholder="Nama Perusahaan*" required>
+                  </div>
+
+                  <!-- Select Layanan IT -->
+                  <div class="col-md-12 margin-select">
+                    <select class="form-control">
+                      <option>Layanan IT apa yang Anda butuhkan ?*</option>
+                    </select>
+                  </div>
+                  <!-- End of Select Layanan IT -->
+
+                  <!-- Radio Button -->
+                  <!-- Radio Button Question -->
+                  <div class="col-md-12">
+                    <h5 for="jumlahKaryawan">Berapa banyak orang yang bekerja pada perusahaan Anda? </label>
+                  </div>
+                  
+
+                  <!-- Radio Button Value -->
+                  <!-- Value 1-5 -->
+                  <label class="costum-radio col-md-3 col-sm-6 col-xs-6">
+                    <input type="radio" name="jumlahKaryawan" id="jumlahKaryawan" value="1-5">
+                    <span class="radio-btn">
+                      <div class="jumlah">
+                         <h3>1 - 5</h3>
+                      </div>
+                      <i class="las la-check"></i>
+                    </span>
+                  </label>
+                  <!-- End of Value 1-5 -->
+                
+                  <!-- Value 5-15 -->
+                  <label class="costum-radio col-md-3 col-sm-6 col-xs-6">
+                    <input type="radio" name="jumlahKaryawan" id="jumlahKaryawan" value="5-15">
+                    <span class="radio-btn">
+                      <div class="jumlah">
+                         <h3>5 - 15</h3>
+                      </div>
+                      <i class="las la-check"></i>
+                    </span>
+                  </label>
+                  <!-- End Value 5-15 -->
+
+                  <!-- Value 15-25 -->
+                  <label class="costum-radio col-md-3 col-sm-6">
+                    <input type="radio" name="jumlahKaryawan" id="jumlahKaryawan" value="15-25">
+                    <span class="radio-btn">
+                      <div class="jumlah">
+                         <h3>15 - 25</h3>
+                      </div>
+                      <i class="las la-check"></i>
+                    </span>
+                  </label>
+                  <!-- End of Value 15-25 -->
+
+                  <!-- Value 20+ -->
+                  <label class="costum-radio col-md-3 col-sm-6">
+                    <input type="radio" name="jumlahKaryawan" id="jumlahKaryawan" value="20+">
+                    <span class="radio-btn">
+                      <div class="jumlah">
+                         <h3>20+</h3>
+                      </div>
+                      <i class="las la-check"></i>
+                    </span>
+                  </label>
+                  <!-- End of Value 20+ -->
+
+                  <!-- Select Bidang Perusahaan -->
+                  <div class="col-md-12 margin-select">                  
+                    <select class="form-control" id="exampleFormControlSelect1" placeholder="holder">
+                      <!-- Value of Select Bidang Perusahaan -->
+                      <option>Pilih bidang perusahaan Anda</option>
+                      <option>Pariwisata</option>
+                      <option>Keuangan</option>
+                      <option>Hukum</option>
+                      <option>Manajemen</option>
+                    </select>
+                  </div>
+                  <!-- End of Select Bidang Perusahaan -->
+
+                  <!-- Verification Input -->
+                  <div class="col-md-7 margin-end">
+                    <input type="text" class="form-control" placeholder="Verification *" required>
+                  </div>
+
+                  <!-- Verification Code Place -->
+                  <div class="col-md-5 margin-end">
+                    <img src="" alt="">
+                  </div>
+
+                  <!-- Agreement -->
+                  <div class="col-md-7 box-setuju">
+                    <input type="checkbox" id="setuju" name="setuju">
+                    <span class="checkbox-btn">    
+                      <i class="las la-check"></i>
+                    </span>
+                    <!-- Agreement Text -->
+                    <label for="setuju">Saya menyetujui bahwa data yang saya isi adalah benar</label>
+                  </div>
+                  <!-- End of Agreement -->
+
+                  <!-- Submit Button -->
+                  <div class="col-md-5 d-flex justify-content-center">
+                    <a href="submit" class="btn-submit">Kirim</a>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+            <!-- End of Container Form -->
+          </div>
+        </div>
+        <!-- End of Container Mitra -->
+
+        <div class="row container-testi">
+          <div class="pelanggan col-md-6">
+            <div class="row col-md-4 pelanggan-info">
+              <div class="img-testi">
+                <img src="img/solusi/foto-mas-arindra.png" alt="">
+              </div>
+              <h5 class="nama-pelanggan">Reza Arindra Fadillah</h5>
+              <p class="posisi">CEO & Project Manager CV. Arindra Production</p>
+            </div>
+            <div class="col-md-8">
+              <p>Terima kasih kepada Codepan Studio Surabaya, aplikasinya sangat membantu. Sudah kami gunakan seluruhnya. Lalu layanan dari Profio secara kesuluruhan juga sudah cukup baik mulai dari komunikasi, hasil, dan ketepatan dalam menyelesaikannya.</p>
+            </div>
+          </div>
+
+          <div class="pelanggan col-md-6">
+            <div class="row col-md-4 pelanggan-info">
+              <div class="img-testi">
+                <img src="img/solusi/foto-pelanggan2.png" alt="">
+              </div>
+              <h5 class="nama-pelanggan">Andrea Piacquadio</h5>
+              <p class="posisi">CEO & Project Manager PT. Angkasa Indah</p>
+            </div>
+            <div class="col-md-8">
+              <p>Layanan jasa dari Codepan Studio Surabaya baik, koordinasinya tanggap dan cepat, pelayanannya maksimal. Overall bagus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Form Solusi -->
+
+    <!-- Page Blog -->
+    <div class="page-blog">
+      <div class="container">
+        <!-- Container Judul -->
+        <div class="container-judul text-center">
+          <p class="sub-judul">Blog Kami</p>
+          <h2 class="judul">GAGASAN, NARASI, DAN INOVASI TEKNOLOGI</h2>
+        </div>
+        <!-- End of Container Judul -->
+        <p class="text-center text-under-judul">Telusuri Blog Codepan Studio untuk gagasan yang berharga dan pemikiran inovatif tentang trend IT masa kini</p>
+
+        <!-- Container Blog -->
+        <div class="container-blog row">
+          <!-- Card Blog 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/page-blog/Foto-Blog1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="sub-judul">04/10/2020</p>
+                <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
+                <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan yang dapat di terapkan pada jaringan private inte…</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Blog 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/page-blog/Foto-Blog2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="sub-judul">04/10/2020</p>
+                <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
+                <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan yang dapat di terapkan pada jaringan private inte…</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Blog 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/page-blog/Foto-Blog3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="sub-judul">04/10/2020</p>
+                <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
+                <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan yang dapat di terapkan pada jaringan private inte…</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Container Blog -->
+
+        <!-- Text under container -->
+        <p class="text-center text-under-container">Wawasan baru membantu Anda melakukan pekerjaan dengan lebih baik dan efisien. <a href="">Lihat semua artikel.</a></p>
+      </div>
+
+    </div>
+    <!-- End of Page Blog -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+         <!-- Page Mari Bermitra -->
+          <div class="mari-bermitra">
+            <div class="background text-center">
+              <h1>Mari Bermitra</h1>
+              <p>
+                Ketika berkaitan dengan teknologi IT untuk perusahaan, Anda membutuhkan seseorang yang ahli. Izinkan kami menunjukkan kepada Anda sebuah layanan IT yang responsif, amanah, dan dapat diandalkan.
+              </p>
+              <a href="">MULAI KONSULTASI GRATIS</a>
+            </div>
+          </div>
+        <!-- End of Page Mari Bermitra -->
+        
+        <!-- Menu Footer -->
+        <div class="menu">
+          <div class="row">
+            <div class="col-lg-3">
+              <ul>
+                <li><h5>Produk</h5></li>
+                <li>Twins Robo Apps</li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3">
+              <ul>
+                <li><h5>Layanan IT</h5></li>
+                <li>Sistem Informasi</li>
+                <li>Aplikasi Mobile</li>
+                <li>Aplikasi E-Gov</li>
+                <li>Intergrasi Sistem</li>
+                <li>Pengadaan IT</li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3">
+              <ul>
+                <li><h5>Perusahaan</h5></li>
+                <li>Tentang Kami</li>
+                <li>Pakta Integritas</li>
+                <li>Aturan Layanan</li>
+                <li>Kontak Kami</li>
+                <li>Karir</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3">
+              <ul>
+                <li><h5>Akun Kami</h5></li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Linkedin</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Of Menu Footer -->
+
+        <!-- Contact -->
+        <div class="contact">
+          <p>Alamat : Jl. Sidosermo VI No.7, Sidosermo, Kec. Wonocolo, Kota SBY, Jawa Timur 60285 </p>
+          <p>Telepon: <a href="tel:+620318437588">(031) 8437588</a> | Email: <a href="mailto:info@codepanstudio.com" target="_blank">info@codepanstudio.com</a> | GMAPS : <a href="https://bit.ly/GMAPSCodepanStudio" target="_blank">https://bit.ly/GMAPSCodepanStudio</a> </p>
+        </div>
+        <!-- End of Contact -->
+
+        <!-- Copyright -->
+        <div class="copyright text-center">
+          <p>Copyright © 2021 CV. Arindra Production</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Costum Main.js -->
     <script src="main.js"></script>
+
+    <!-- Boostrap Bundle CSS include JQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Header Effect .js -->
+    <script src="/headerEffect/js/main.js"></script>
+    <script src="/headerEffect/js/modernizr.js"></script>
+
+    <!-- Owl Caousel .js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script> -->
 </body>
 </html>
