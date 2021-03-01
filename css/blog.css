@@ -1,0 +1,105 @@
+.list-blog{
+    background: url("../img/background/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+.list-blog .container-judul{
+    color: #2926A9;
+    margin-bottom: 60px;
+}
+
+.list-blog .container-judul h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.list-blog .container-blog .card{
+    color: #2926A9;
+}
+
+.list-blog .container-blog .sub-judul{
+    color: #00CAE6;
+    font-size: .8rem;
+    margin-bottom: 3px;
+    font-weight:600;
+}
+
+.list-blog .container-blog .card-title{
+    font-size: 1,.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.list-blog .container-blog .card-text{
+    font-size: .95rem;
+    margin-bottom: .8rem;
+}
+
+.list-blog .container-blog .card-penulis,
+.list-blog .container-blog .card-tanggal{
+    font-size: .85rem;
+    margin-bottom: 5px;
+}
+
+.list-blog .container-blog .margin-blog{
+    margin-bottom: 40px;
+}
+
+.list-blog .list-wrapper{
+}
+
+.list-blog .list-wrapper .list-item{
+    position: relative;
+    cursor: pointer;
+}
+
+.list-blog .simple-pagnation ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.list-blog .simple-pagnation li{
+    display: inline-block;
+    margin: 2px;
+}
+
+.list-blog .simple-pagnation a,
+.list-blog .simple-pagnation li span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    color: #2926A9;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, .1), 0 2px 5px rgba(0,0,0,.5);
+    transition: all 1s ease;
+}
+
+.list-blog .simple-pagnation li a:hover{
+    background: #2926A9;
+    color: #fff;
+}
+
+.list-blog .simple-pagnation .current{
+    color: #fff;
+    background: #2926A9;
+    border-color: rgb(255, 255, 255);
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.list-blog .simple-pagnation .prev.current,
+.list-blog .simple-pagnation .next.current{
+    background: #2926A9;
+    border: none;
+}
