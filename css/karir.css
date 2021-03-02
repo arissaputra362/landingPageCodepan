@@ -1,6 +1,6 @@
 .jumbotron{
-    background-image: url("../img/background/Jumbobox\ Karir.png");
-    padding: 190px 250px 120px 250px;
+    background-image: url("../img/background/Jumbobox\ karir\ update.jpg");
+    padding: 170px 250px 150px 250px;
 }
 
 .jumbotron .content h1{
@@ -61,7 +61,7 @@
 
 .tabel-bergabung{
     background: #fff;
-    padding: 100px 0 80px 0;
+    padding: 100px 0 0 0;
 }
 
 .tabel-bergabung .container-judul{
@@ -144,4 +144,8 @@
 
 .tabel-bergabung tbody .btn-tabel a:hover::before{
     height: 100%;
+}
+
+.tabel-bergabung .text-under-table{
+    margin: 40px 0 20px 0;
 }

@@ -670,6 +670,15 @@
         padding: 0px !important;
     }
 
+    /*--- Portofolio ---*/
+    .portofolio .card .img-card-container{
+        height: 110px;
+    }
+
+    .portofolio .card .card-img-top{
+        width: auto;
+    }
+
     /* ====== Karir Page CSS ====== */
     .jumbotron-karir{
         padding: 100px 0px 80px 0px;
