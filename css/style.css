@@ -50,14 +50,6 @@ label{
     color: #7F7F7F;
 }
 
-/* --- To Cover Page from Overflow */
-.page-masalah,
-.solusi,
-footer{
-    overflow: hidden;
-}
-
-
 /* --  Header Costum CSS -- */
 header{
     background-color: #2926A9;
@@ -415,7 +407,7 @@ a.wa-button:hover{
     background: #E9E9FF;
     padding-top: 80px;
     padding-bottom: 200px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .page-masalah .p-keterangan{
