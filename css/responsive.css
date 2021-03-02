@@ -281,7 +281,6 @@
     }
 
 
-    
     /*--- Jumbotron ---*/
     .jumbotron .cd-headline {
         font-size: 3rem;
@@ -648,6 +647,11 @@
     }
 
     /*--- Page Masalah ---*/
+    .page-masalah .p-keterangan{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
     .page-masalah .btn-primary{
         width: 95%;
     }
