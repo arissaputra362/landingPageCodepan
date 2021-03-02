@@ -48,6 +48,13 @@ label{
     color: #7F7F7F;
 }
 
+/* --- To Cover Page from Overflow */
+.page-masalah,
+.solusi,
+footer{
+    overflow: hidden;
+}
+
 
 /* --  Header Costum CSS -- */
 header{
@@ -55,7 +62,6 @@ header{
     color: #fff;
     padding: 15px 0 0 0;
 }
-
 
 header .contact{
     display: flex;
