@@ -174,7 +174,7 @@ nav {
     white-space: nowrap;
     transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     position: relative;
-    transform: translateY(-10%);
+    transform: translateY(-5%);
     z-index: 0;
 }
 
@@ -557,6 +557,7 @@ a.wa-button:hover{
     cursor: pointer;
     min-height: 7px;
     border: none;
+    outline: none;
     border-radius: 100px;
     background-color: #D8D8D8;
 }
@@ -745,16 +746,38 @@ a.wa-button:hover{
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    height: initial;
 }
 
-.portofolio .card img{
+.portofolio .card .logo{
+    position: absolute;
+    z-index: 300;
+    width: 30%;
+    top: 20%;
+    left: 35%;
+}
+
+.portofolio .card .logo.position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    top: 30%;
+    left: 27%;
+}
+
+.portofolio .card .logo.position img{
+    width: inherit;
+}
+
+.portofolio .card .card-img-top{
     height: 100%;
+    width: 100%;
     position: initial;
     transition: all .25s ease-in-out;
 }
 
-.portofolio .card:hover img{
+.portofolio .card:hover .card-img-top{
     transform: scale(1.2);
 }
 
@@ -1297,7 +1320,7 @@ a.wa-button:hover{
     background-image: url("../img/background/mari-bermitra.png");
     background-repeat: no-repeat;
     background-size:100%;
-    padding: 150px 0;
+    padding: 0px 0 150px 0;
 }
 
 .mari-bermitra h1{
@@ -1338,8 +1361,8 @@ a.wa-button:hover{
 /* --- End of CSS Mari Bermitra --- */
 /* --- CSS Footer --- */
 footer{
+    margin-top: -10px;
     background-color: #2926A9;
-    padding-top: 20px;
     overflow: hidden;
 }
 

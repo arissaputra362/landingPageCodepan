@@ -62,19 +62,19 @@
           <!-- Icon Karir, Blog, Kontak -->
           <ul class="d-flex justify-content-md-end col-md-3 col-sm-12">
             <li>
-              <a href="">
+              <a href="./menu/karir.html">
                 <img src="./img/header/karir-icon.png" alt="">
                 <p>Karir</p>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="./menu/blog.html">
                 <img src="./img/header/blog-icon.png" alt="">
                 <p>Blog</p>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="./menu/kontak.html">
                 <img src="./img/header/contact-icon.png" alt="">
                 <p>Kontak</p>
               </a>
@@ -99,7 +99,7 @@
                 <a class="nav-link" href="#" onclick="moveMenuNav(this)">TENTANG KAMI <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="moveMenuNav(this)">PORTOFOLIO <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./menu/portofolio.html" onclick="moveMenuNav(this)">PORTOFOLIO <span class="sr-only">(current)</span></a>
               </li>
               
               <li class="nav-item dropdown menu-area">
@@ -139,7 +139,7 @@
                       </a>
                     </div>
                     <div class="col-sm-6 col-lg-2 dropdown-item">
-                      <a href="#">
+                      <a href="./menu/layanan_it.html">
                         <img src="/img/navbar/dropdown/plus.png" alt="">
                         <h5>Semua layanan</h5>
                       </a>
@@ -185,7 +185,7 @@
 
     <!-- Jumbotron Heading -->
     <div id="mt" class="jumbotron d-flex justify-content-end">
-      <div class="container">
+      <div class="container" data-aos="fade-down">
         <div class="content col-12">
           <h2>Codepan Studio Melayani</h2>
           <h1 class="display-4 cd-headline slide">
@@ -359,6 +359,7 @@
             <div class="card h-100">
               <div class="img-card-container">
                 <img src="./img/portofolio/ap.png" class="card-img-top" alt="...">
+                <img src="./img/portofolio/Logo-Arindra.png" class="logo" alt="">
               </div>
               <div class="card-body text-left">
                 <p class="mini-judul">Sistem Informasi</p>
@@ -373,6 +374,10 @@
             <div class="card h-100">
               <div class="img-card-container">
                 <img src="./img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                <div class="logo position">
+                  <img src="./img/portofolio/joss.png" alt="">
+                  <img src="./img/portofolio/txtTwinsRobo.png" alt="">
+                </div>
               </div>
               <div class="card-body text-left">
                 <p class="mini-judul">Aplikasi Mobile</p>
@@ -754,6 +759,7 @@
     <!-- End of Page Blog -->
 
     <!-- Footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2926A9" fill-opacity="1" d="M0,192L20,197.3C40,203,80,213,120,208C160,203,200,181,240,154.7C280,128,320,96,360,80C400,64,440,64,480,96C520,128,560,192,600,186.7C640,181,680,107,720,101.3C760,96,800,160,840,170.7C880,181,920,139,960,122.7C1000,107,1040,117,1080,112C1120,107,1160,85,1200,106.7C1240,128,1280,192,1320,208C1360,224,1400,192,1420,176L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
     <footer>
       <div class="container">
          <!-- Page Mari Bermitra -->
@@ -827,6 +833,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Boostrap Bundle CSS include JQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -846,10 +853,11 @@
     <script src="./js/main.js"></script>
     
     <script>
+      topNavBar();
       $(function() {
           AOS.init({
             duration: 800,
-            anchorPlacement:'top-top',
+            anchorPlacement:'top-bottom',
             once:false,
           });
           window.addEventListener("load", AOS.refresh);

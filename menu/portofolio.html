@@ -14,10 +14,11 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
    <!-- Line Awesome CSS From https://icons8.com/line-awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" media="all">
    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
    <!-- Hover Effect CSS -->
-   <link rel="stylesheet" href="./css/hover-min.css">
+   <link rel="stylesheet" href="../css/hover-min.css">
 
    <!-- Animate on Scroll CSS -->
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,228 +26,663 @@
    <!-- Costum CSS -->
    <link rel="stylesheet" href="../css/style.css">
    <link rel="stylesheet" href="../css/responsive.css">
+   <link rel="stylesheet" href="../css/portofolio.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="fixed-top">
-        <div class="container">  
-          <div class="d-flex justify-content-between row">
-            <!-- Kontak Bar -->
-            <div class="contact col-md-6 col-sm-12">
-              <div class="telepon">
-                <img src="../img/header/chat-icon.png" alt="">
-                <div class="text">
-                  <p class="judul">Hubungi Kami</p>
-                  <a href="tel:+6281252200089" class="isi">081252200089</a>
-                </div>
+    <header>
+      <div class="container">  
+        <div class="d-flex justify-content-between row">
+          <!-- Kontak Bar -->
+          <div class="contact col-md-6 col-sm-12">
+            <div class="telepon">
+              <img src="../img/header/chat-icon.png" alt="">
+              <div class="text">
+                <p class="judul">Hubungi Kami</p>
+                <a href="tel:+6281252200089" class="isi">081252200089</a>
               </div>
-  
-              <div class="email">
-                <img src="../img/header/email-icon.png" alt="">
-                <div class="text">
-                  <p class="judul">Email Kami</p>
-                  <a href="mailto:info@codepanstudio.com" target="_blank" class="isi">info@codepanstudio.com</a>
-                </div>
+            </div>
+
+            <div class="email">
+              <img src="../img/header/email-icon.png" alt="">
+              <div class="text">
+                <p class="judul">Email Kami</p>
+                <a href="mailto:info@codepanstudio.com" target="_blank" class="isi">info@codepanstudio.com</a>
               </div>
-            </div>  
-  
-            <!-- Icon Karir, Blog, Kontak -->
-            <ul class="d-flex justify-content-md-end justify-content-sm-start col-md-6 col-sm-12">
-              <li>
-                <a href="">
-                  <img src="../img/header/karir-icon.png" alt="">
-                  <p>Karir</p>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="../img/header/blog-icon.png" alt="">
-                  <p>Blog</p>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="../img/header/contact-icon.png" alt="">
-                  <p>Kontak</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+            </div>
+          </div>  
+
+          <!-- Icon Karir, Blog, Kontak -->
+          <ul class="d-flex justify-content-md-end justify-content-sm-start col-md-6 col-sm-12">
+            <li>
+              <a href="./karir.html">
+                <img src="../img/header/karir-icon.png" alt="">
+                <p>Karir</p>
+              </a>
+            </li>
+            <li>
+              <a href="./blog.html">
+                <img src="../img/header/blog-icon.png" alt="">
+                <p>Blog</p>
+              </a>
+            </li>
+            <li>
+              <a href="./kontak.html">
+                <img src="../img/header/contact-icon.png" alt="">
+                <p>Kontak</p>
+              </a>
+            </li>
+          </ul>
         </div>
-  
-        <!--  Bar Navigasi -->
-      <nav class="mt-4 mb-0 navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-5">
-              <li class="nav-item">
-                <a class="nav-link active" href="#" onclick="moveMenuNav(this)">BERANDA <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" onclick="moveMenuNav(this)">TENTANG KAMI <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" onclick="moveMenuNav(this)">PORTOFOLIO <span class="sr-only">(current)</span></a>
-              </li>
-              
-              <li class="nav-item dropdown menu-area">
-                <a class="nav-link dropdown-toggle" href="#" onclick="moveMenuNav(this)" id="mega-one" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  LAYANAN IT
-                </a>
-                <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
-                  <div class="row">
-                    <div class="col-sm-6 col-lg-2 dropdown-item">
-                      <a href="#">
-                        <img src="../img/navbar/dropdown/laptop.png" alt="">
-                        <h5>Sistem Informasi</h5>
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 dropdown-item">
-                      <a href="#">
-                        <img src="../img/navbar/dropdown/smartphone.png" alt="">
-                        <h5>Aplikasi Mobile</h5>
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 dropdown-item">
-                      <a href="#">
-                        <img src="../img/navbar/dropdown/bar-chart.png" alt="">
-                        <h5>Aplikasi E-Gov</h5>
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 dropdown-item">
-                      <a href="#">
-                        <img src="../img/navbar/dropdown/sync.png" alt="">
-                        <h5>Aplikasi E-Gov</h5>
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 dropdown-item">
-                      <a href="#">
-                        <img src="../img/navbar/dropdown/google-docs.png" alt="">
-                        <h5>Pengadaan IT</h5>
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 dropdown-item">
-                      <a href="#">
-                        <img src="../img/navbar/dropdown/plus.png" alt="">
-                        <h5>Semua layanan</h5>
-                      </a>
-                    </div>
+      </div>
+
+      <!--  Bar Navigasi -->
+    <nav id="navbar" class="mt-4 mb-0 navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-5">
+            <li class="nav-item">
+              <a class="nav-link" href="../landingPage.html" onclick="moveMenuNav(this)">BERANDA <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="moveMenuNav(this)">TENTANG KAMI <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" onclick="moveMenuNav(this)">PORTOFOLIO <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown menu-area">
+              <a class="nav-link dropdown-toggle" href="#" onclick="moveMenuNav(this)" id="mega-one" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                LAYANAN IT
+              </a>
+              <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-2 dropdown-item">
+                    <a href="*">
+                      <img src="../img/navbar/dropdown/laptop.png" alt="">
+                      <h5>Sistem Informasi</h5>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-2 dropdown-item">
+                    <a href="#">
+                      <img src="../img/navbar/dropdown/smartphone.png" alt="">
+                      <h5>Aplikasi Mobile</h5>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-2 dropdown-item">
+                    <a href="#">
+                      <img src="../img/navbar/dropdown/bar-chart.png" alt="">
+                      <h5>Aplikasi E-Gov</h5>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-2 dropdown-item">
+                    <a href="#">
+                      <img src="../img/navbar/dropdown/sync.png" alt="">
+                      <h5>Aplikasi E-Gov</h5>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-2 dropdown-item">
+                    <a href="#">
+                      <img src="../img/navbar/dropdown/google-docs.png" alt="">
+                      <h5>Pengadaan IT</h5>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-2 dropdown-item">
+                    <a href="./layanan_it.html">
+                      <img src="../img/navbar/dropdown/plus.png" alt="">
+                      <h5>Semua layanan</h5>
+                    </a>
                   </div>
                 </div>
-              </li>
-            </ul>
-    
-            <a href="#" class="d-flex justify-content-center"><img class="logo mr-auto" src="../img/navbar/logo-codepan.png" alt="" class=""></a>
-    
-            <ul class="d-flex justify-content-md-end justify-content-sm-center ml-auto">
-              <li>
-                <a href="">
-                  <img class="btn-sosmed" src="../img/navbar/fb.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img class="btn-sosmed" src="../img/navbar/ig.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img class="btn-sosmed" src="../img/navbar/linkind.png" alt="">
-                </a>
-              </li>
-              
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
+  
+          <a href="#" class="d-flex justify-content-center"><img class="logo mr-auto" src="../img/navbar/logo-codepan.png" alt="" class=""></a>
+  
+          <ul class="d-flex justify-content-md-end justify-content-sm-center ml-auto">
+            <li>
+              <a href="">
+                <img class="btn-sosmed" src="../img/navbar/fb.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img class="btn-sosmed" src="../img/navbar/ig.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img class="btn-sosmed" src="../img/navbar/linkind.png" alt="">
+              </a>
+            </li>
+            
+          </ul>
         </div>
-      </nav>
-      <!-- End of Bar Navigasi -->
+      </div>
+    </nav>
+    <!-- End of Bar Navigasi -->
     </header>
     <!-- End of Header -->
 
-    <!-- Portofolio -->
+    <!-- Fixed Button WA -->
+    <a href="" class="wa-button hvr-icon-pop">
+      <i class="fab fa-whatsapp hvr-icon"></i>
+      <p>Silahkan Konsultasi di Nomor Whatsapp Kami</p>
+    </a>
+    <!-- End Fixed Button WA -->
 
+    <!-- Portofolio Page -->
+    <div id="mt" class="portofolio-page">
+      <div class="container">
+        <!-- Container Judul Portofolio -->
+        <div class="container-judul text-center">
+          <h1>PORTOFOLIO</h1>
+          <p>Berikut kami sajikan portofolio yang telah kami berikan kepada mitra sebagai bukti pengalaman layanan kami</p>
+        </div>
+        <!-- End of Container Judul Portofolio -->
 
-    <!-- Footer -->
+        <div class="container-portofolio">
+           <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#all"><span>All</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pengadaan-it"><span>Pengadaan IT</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#aplikasi-mobile"><span>Aplikasi Mobile</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#sistem-informasi"><span>Sistem Informasi</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#integrasi-sistem"><span>Integrasi Sistem</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#aplikasi-egov"><span>Aplikasi E-Gov</span></a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="all" class="container tab-pane active"><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                        <div class="logo position">
+                          <img src="../img/portofolio/joss.png" alt="">
+                          <img src="../img/portofolio/txtTwinsRobo.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Aplikasi Mobile</p>
+                        <h5 class="card-title">Aplikasi Media Pembelajaran Programing Robot - Twins Robo Apps</h5>
+                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara multiplayer</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                        <div class="logo position">
+                          <img src="../img/portofolio/joss.png" alt="">
+                          <img src="../img/portofolio/txtTwinsRobo.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Aplikasi Mobile</p>
+                        <h5 class="card-title">Aplikasi Media Pembelajaran Programing Robot - Twins Robo Apps</h5>
+                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara multiplayer</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pengadaan-it" class="container tab-pane fade"><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                        <div class="logo position">
+                          <img src="../img/portofolio/joss.png" alt="">
+                          <img src="../img/portofolio/txtTwinsRobo.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Aplikasi Mobile</p>
+                        <h5 class="card-title">Aplikasi Media Pembelajaran Programing Robot - Twins Robo Apps</h5>
+                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara multiplayer</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="aplikasi-mobile" class="container tab-pane fade"><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                        <div class="logo position">
+                          <img src="../img/portofolio/joss.png" alt="">
+                          <img src="../img/portofolio/txtTwinsRobo.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Aplikasi Mobile</p>
+                        <h5 class="card-title">Aplikasi Media Pembelajaran Programing Robot - Twins Robo Apps</h5>
+                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara multiplayer</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                        <div class="logo position">
+                          <img src="../img/portofolio/joss.png" alt="">
+                          <img src="../img/portofolio/txtTwinsRobo.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Aplikasi Mobile</p>
+                        <h5 class="card-title">Aplikasi Media Pembelajaran Programing Robot - Twins Robo Apps</h5>
+                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara multiplayer</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="sistem-informasi" class="container tab-pane fade"><br>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                        <div class="logo position">
+                          <img src="../img/portofolio/joss.png" alt="">
+                          <img src="../img/portofolio/txtTwinsRobo.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Aplikasi Mobile</p>
+                        <h5 class="card-title">Aplikasi Media Pembelajaran Programing Robot - Twins Robo Apps</h5>
+                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara multiplayer</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/twin-robo.png" class="card-img-top" alt="...">
+                        <div class="logo position">
+                          <img src="../img/portofolio/joss.png" alt="">
+                          <img src="../img/portofolio/txtTwinsRobo.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Aplikasi Mobile</p>
+                        <h5 class="card-title">Aplikasi Media Pembelajaran Programing Robot - Twins Robo Apps</h5>
+                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara multiplayer</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV. Arindra Production adalah sebuah production house di bidang Videography video Company Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                      <div class="img-card-container">
+                        <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                        <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                      </div>
+                      <div class="card-body text-left">
+                        <p class="mini-judul">Sistem Informasi</p>
+                        <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                        <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="integrasi-sistem" class="container tab-pane fade"><br>
+                <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card h-100">
+                    <div class="img-card-container">
+                      <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                      <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                    </div>
+                    <div class="card-body text-left">
+                      <p class="mini-judul">Sistem Informasi</p>
+                      <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                      <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                      <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="aplikasi-egov" class="container tab-pane fade"><br>
+                <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card h-100">
+                    <div class="img-card-container">
+                      <img src="../img/portofolio/ap.png" class="card-img-top" alt="...">
+                      <img src="../img/portofolio/Logo-Arindra.png" class="logo" alt="">
+                    </div>
+                    <div class="card-body text-left">
+                      <p class="mini-judul">Sistem Informasi</p>
+                      <h5 class="card-title">Website Company Profile Arindraproduction.com - CV.Arindra Production</h5>
+                      <p class="card-text">Latar Belakang CV.Arindra Production adalah sebuah production house di bidang Videography video Comany Profile, Video Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
+                      <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2926A9" fill-opacity="1" d="M0,192L20,197.3C40,203,80,213,120,208C160,203,200,181,240,154.7C280,128,320,96,360,80C400,64,440,64,480,96C520,128,560,192,600,186.7C640,181,680,107,720,101.3C760,96,800,160,840,170.7C880,181,920,139,960,122.7C1000,107,1040,117,1080,112C1120,107,1160,85,1200,106.7C1240,128,1280,192,1320,208C1360,224,1400,192,1420,176L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+    </div>
+    <!-- End of Portofolio Page -->
+
+    <!-- Footer --> 
     <footer>
-        <div class="container">
-           <!-- Page Mari Bermitra -->
-            <div class="mari-bermitra">
-              <div class="background text-center">
-                <h1>Mari Bermitra</h1>
-                <p>
-                  Ketika berkaitan dengan teknologi IT untuk perusahaan, Anda membutuhkan seseorang yang ahli. Izinkan kami menunjukkan kepada Anda sebuah layanan IT yang responsif, amanah, dan dapat diandalkan.
-                </p>
-                <a href="">MULAI KONSULTASI GRATIS</a>
-              </div>
-            </div>
-          <!-- End of Page Mari Bermitra -->
-          
-          <!-- Menu Footer -->
-          <div class="menu">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                <ul>
-                  <li><h5>Produk</h5></li>
-                  <li>Twins Robo Apps</li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                <ul>
-                  <li><h5>Layanan IT</h5></li>
-                  <li>Sistem Informasi</li>
-                  <li>Aplikasi Mobile</li>
-                  <li>Aplikasi E-Gov</li>
-                  <li>Intergrasi Sistem</li>
-                  <li>Pengadaan IT</li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                <ul>
-                  <li><h5>Perusahaan</h5></li>
-                  <li>Tentang Kami</li>
-                  <li>Pakta Integritas</li>
-                  <li>Aturan Layanan</li>
-                  <li>Kontak Kami</li>
-                  <li>Karir</li>
-                  <li>Blog</li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                <ul>
-                  <li><h5>Akun Kami</h5></li>
-                  <li>Facebook</li>
-                  <li>Instagram</li>
-                  <li>Linkedin</li>
-                  <li>Youtube</li>
-                </ul>
-              </div>
+      <div class="container">
+         <!-- Page Mari Bermitra -->
+          <div class="mari-bermitra" data-aos="fade-up" data-aos-delay="200">
+            <div class="background text-center">
+              <h1>Mari Bermitra</h1>
+              <p>
+                Ketika berkaitan dengan teknologi IT untuk perusahaan, Anda membutuhkan seseorang yang ahli. Izinkan kami menunjukkan kepada Anda sebuah layanan IT yang responsif, amanah, dan dapat diandalkan.
+              </p>
+              <a href="">MULAI KONSULTASI GRATIS</a>
             </div>
           </div>
-          <!-- End Of Menu Footer -->
+        <!-- End of Page Mari Bermitra -->
+        
+        <!-- Menu Footer -->
+        <div class="menu">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right">
+              <ul>
+                <li><h5>Produk</h5></li>
+                <li>Twins Robo Apps</li>
+              </ul>
+            </div>
   
-          <!-- Contact -->
-          <div class="contact">
-            <p>Alamat : Jl. Sidosermo VI No.7, Sidosermo, Kec. Wonocolo, Kota SBY, Jawa Timur 60285 </p>
-            <p>Telepon: <a href="tel:+620318437588">(031) 8437588</a> | Email: <a href="mailto:info@codepanstudio.com" target="_blank">info@codepanstudio.com</a> | GMAPS : <a href="https://bit.ly/GMAPSCodepanStudio" target="_blank">https://bit.ly/GMAPSCodepanStudio</a> </p>
-          </div>
-          <!-- End of Contact -->
+            <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right" data-aos-delay="200">
+              <ul>
+                <li><h5>Layanan IT</h5></li>
+                <li>Sistem Informasi</li>
+                <li>Aplikasi Mobile</li>
+                <li>Aplikasi E-Gov</li>
+                <li>Intergrasi Sistem</li>
+                <li>Pengadaan IT</li>
+              </ul>
+            </div>
   
-          <!-- Copyright -->
-          <div class="copyright text-center">
-            <p>Copyright © 2021 CV. Arindra Production</p>
+            <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right" data-aos-delay="400">
+              <ul>
+                <li><h5>Perusahaan</h5></li>
+                <li>Tentang Kami</li>
+                <li>Pakta Integritas</li>
+                <li>Aturan Layanan</li>
+                <li>Kontak Kami</li>
+                <li>Karir</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right" data-aos-delay="600">
+              <ul>
+                <li><h5>Akun Kami</h5></li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Linkedin</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
           </div>
         </div>
-    </footer>
+        <!-- End Of Menu Footer -->
 
-    <!-- Costum Main.js -->
-    <script src="../js/main.js"></script>
+        <!-- Contact -->
+        <div class="contact" data-aos="fade-left">
+          <p>Alamat : Jl. Sidosermo VI No.7, Sidosermo, Kec. Wonocolo, Kota SBY, Jawa Timur 60285 </p>
+          <p>Telepon: <a href="tel:+620318437588" class="hvr-underline-from-left">(031) 8437588</a> | Email: <a href="mailto:info@codepanstudio.com" class="hvr-underline-from-left" target="_blank">info@codepanstudio.com</a> | GMAPS : <a href="https://bit.ly/GMAPSCodepanStudio" class="hvr-underline-from-left" target="_blank">https://bit.ly/GMAPSCodepanStudio</a> </p>
+        </div>
+        <!-- End of Contact -->
+
+        <!-- Copyright -->
+        <div class="copyright text-center">
+          <p>Copyright © 2021 CV. Arindra Production</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Boostrap Bundle CSS include JQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -262,5 +698,20 @@
 
     <!-- Pagination -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js"></script>
+
+    <!-- Costum Main.js -->
+    <script src="../js/main.js"></script>
+
+    <script>
+      topNavBar();
+      $(function() {
+          AOS.init({
+            duration: 600,
+            anchorPlacement:'top-bottom',
+            once:false,
+          });
+          window.addEventListener("load", AOS.refresh);
+     });
+    </script>
 </body>
 </html>

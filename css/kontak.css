@@ -16,7 +16,6 @@
 
 .kontak-kami .container-judul p{
     font-weight: 500;
-    font-size: 1.45rem;
 }
 
 .kontak-kami .container-judul{
@@ -28,7 +27,7 @@
 }
 
 .kontak-kami .container-icon img{
-    height: 76px;
+    height: 50px;
     margin-bottom: 15px;
 }
 
@@ -59,8 +58,17 @@
 }
 
 .kontak-kami .text-under-form{
-    padding-bottom: 80px;
     color: #7F7F7F;
+}
+
+.kontak-kami .text-under-form a{
+    text-decoration: none;
+}
+
+.kontak-kami .text-under-form .hvr-underline-from-left:before {
+    height: 2px;
+    background: #00CAE6;
+    margin-bottom: 0;
 }
 
 .kontak-kami .text-under-form a{
@@ -70,7 +78,6 @@
 
 .kontak-kami .text-under-form a:hover{
     text-decoration: none;
-    color: #2926A9;
 }
 
 .kontak-kami .solusi .container-mitra{

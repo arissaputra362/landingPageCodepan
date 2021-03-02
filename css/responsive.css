@@ -165,8 +165,12 @@
 
     /* ====== Karir Page CSS ====== */
     .jumbotron-karir{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+
+    .list-karir{
+        padding-bottom: 30px !important;
     }
     /* ==== End of Karir Page CSS === */
 
@@ -181,6 +185,10 @@
     } 
 
     /* ===== CSS Page Not Found ==== */
+    .page-not-found{
+        position: relative;
+    }
+
     .page-not-found .container-text a{
         width: 100%;
         font-size: 1.2rem;
@@ -200,12 +208,56 @@
         display: flex;
         justify-content: center;
     }
+
+    /* ==== Portofolio Page CSS ==== */
+    .portofolio-page .nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .portofolio-page .container-portofolio .nav-item{
+        width: 45% !important;
+        border: 1.8px solid #2926A9;
+        border-radius: 5px;
+        margin: 5px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        padding: 0 !important;
+    }
+
+    .portofolio-page .container-portofolio .nav-link span{
+        position: unset !important;
+    }
     
+    .portofolio-page .container-portofolio .nav-link span::before{
+        content: unset !important;
+    }
+
+    .portofolio-page .container-portofolio .nav-link::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        background: #00CAE6;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: left right;
+        transition: 650ms;
+        z-index: -1;
+    }
+
+    .portofolio-page .container-portofolio .nav-link:hover::before,
+    .portofolio-page .container-portofolio .nav-link.active::before{
+        transform: scaleX(1);
+    }
+
+    .portofolio-page .container-portofolio .nav-link.active span{
+        color: #fff;
+        font-weight: 400;
+    }
 }
-
-/* @media only screen and (min-width: 768px){
-
-} */
 
 @media only screen and (max-width: 767px){
     header .contact{
@@ -333,7 +385,22 @@
         width: 50%;
     }
 
-    /* ==== End of Landing Page CSS ==== */   
+    /* ==== End of Landing Page CSS ==== */  
+    /* ==== Page Karir CSS ==== */
+    .jumbotron-karir{
+        padding: 70px 30px !important;
+        margin: auto;
+    }
+
+    .jumbotron p{
+        padding: 0 !important;
+    }
+    /* ==== End of Page Karir CSS ==== */
+
+    /* ==== Page Not Found CSS ==== */
+    .page-not-found .container-text{
+        margin-bottom: 70px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -553,6 +620,11 @@
     /* ==== CSS Page Not Found ==== */
     .page-not-found .container-text .to-homepage{
         width: 100%;
+    }
+
+    /* ==== Portofolio Page CSS === */
+    .portofolio-page .container-portofolio .nav-item{
+        width: 90% !important;
     }
 }
 

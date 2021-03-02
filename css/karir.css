@@ -13,6 +13,10 @@
     line-height: 1.15;
 }
 
+.container.aos-init.aos-animate{
+    margin: auto;
+}
+
 .list-karir{
     padding: 100px 0;
     background: #F7F7FF;

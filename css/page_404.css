@@ -2,7 +2,6 @@
     background: url("../img/background/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 3rem;
 }
 
 .page-not-found .container-text{
@@ -85,8 +84,6 @@
     text-decoration: none;
 }
 
-.page-not-found .container-text .visit-us a img{
-    height: 13px;
-    width: auto;
+.page-not-found .container-text .visit-us a i{
     margin-left: 15px;
 }
