@@ -524,6 +524,9 @@
         padding: 0;
     }
 
+    .portofolio .row{
+        margin: 0;
+    }
     /*--- Page Solusi ---*/
     .solusi .container-form .jumlah h3{
         font-size: 1rem;
@@ -731,13 +734,30 @@
     }
 
     /*--- Portofolio ---*/
+    .portofolio .container-judul{
+        margin-bottom: 40px;
+    }
+
     .portofolio .card{
-        padding: 20px 15px 10px 15px;
+        padding: 16px 13px 14px 13px;
+    }
+
+    .portofolio .card .mini-judul{
+        font-size: .7rem;
+    }
+
+    .portofolio .card .card-title{
+        font-size: 1rem;
+    }
+
+    .portofolio .card .card-text{
+        font-size: .8rem;
     }
 
     .portofolio .batas-card{
-        padding: 0 15px;
+        padding: 0;
     }
+
     .jenis-layanan .batas-card{
         padding: 0;
     }
