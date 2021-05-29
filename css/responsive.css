@@ -354,6 +354,11 @@
         margin-right: 20px;
     }
 
+    /*--- Solusi ---- */
+    .solusi .container-mitra .keterangan h2{
+        font-size: 1.25rem;
+    }
+
     /*--- Page Blog ---*/
     .page-blog .container-blog{
         padding-right: 15px;
@@ -527,6 +532,7 @@
     .portofolio .row{
         margin: 0;
     }
+    
     /*--- Page Solusi ---*/
     .solusi .container-form .jumlah h3{
         font-size: 1rem;

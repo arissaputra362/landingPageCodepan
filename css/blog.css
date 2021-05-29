@@ -5,11 +5,14 @@
     padding-top: 70px;
 }
 
+/* --- Gabung dengan judul di isi blog --- */
+.container-isi-blog .container-judul,
 .list-blog .container-judul{
     color: #2926A9;
     margin-bottom: 60px;
 }
 
+.container-isi-blog .container-judul h1,
 .list-blog .container-judul h1{
     font-weight: 700;
     margin-bottom: 20px;
@@ -49,9 +52,6 @@
 
 .list-blog .container-blog .margin-blog{
     margin-bottom: 40px;
-}
-
-.list-blog .list-wrapper{
 }
 
 .list-blog .list-wrapper .list-item{
@@ -104,4 +104,26 @@
 .list-blog .simple-pagnation .next.current{
     background: #2926A9;
     border: none;
+}
+
+/* === End of List Blog CSS === */
+.container-isi-blog{
+    background: url("../img/background/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;   
+}
+
+.container-isi-blog .breadcrumb-item + .breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f30b";
+}
+
+.container-isi-blog nav,
+.container-isi-blog .breadcrumb{
+    background: none;
+}
+
+.container-isi-blog ol li a{
+    color: #00CAE6;
 }
